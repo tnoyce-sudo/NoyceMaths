@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <style>
+    #countdown {
+      font-family: Arial, sans-serif;
+      color: #333;
+      font-size: 24px;
+    }
+  </style>
+</head>
+<body>
+  <div id="countdown"></div>
+
+  <script>
+    // Set the date and time for the countdown (9:00 AM on November 13, 2025)
+    const assessmentDate = new Date("November 13, 2025 09:00:00").getTime();
+
+    // Update the countdown every second
+    const countdownFunction = setInterval(function() {
+      const now = new Date().getTime();
+      const distance = assessmentDate - now;
+
+      // Time calculations for days, hours, minutes, and seconds
+      const days = Math.floor(distance / (1000 * 60 * 60
